@@ -14,6 +14,8 @@
 ### (3) Works after (1) and (2) have been applied
 
 ```bash
+# Edit /etc/hosts for server.example.br
+sudo systemctl restart systemd-resolved
 #
 ubuntu@ip-172-31-175-208:~/projects/Two-Way-SSL$ curl https://server.example.br --cacert ca/ca.crt -k
 <html>
